@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cari"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Cari" />
+        <item
+            android:id="@+id/nav_genre"
+            android:icon="@drawable/ic_genre"
+            android:title="Genre" />
+        <item
+            android:id="@+id/nav_negara"
+            android:icon="@drawable/ic_country"
+            android:title="Negara" />
+        <item
+            android:id="@+id/nav_tahun"
+            android:icon="@drawable/ic_year"
+            android:title="Tahun" />
+        <item
+            android:id="@+id/nav_popular"
+            android:icon="@drawable/ic_popular"
+            android:title="Popular Movie" />
+    </group>
+
+    <item android:title="Lainnya">
+        <menu>
+            <item
+                android:id="@+id/nav_tentang"
+                android:icon="@drawable/ic_tentang"
+                android:title="Tentang" />
+            <item
+                android:id="@+id/nav_bagikan"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Bagikan" />
+        </menu>
+    </item>
+
+</menu>

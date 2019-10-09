@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frag_genre"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="#dadada"
+        />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layoutd_eitor_absoluteX="8dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvdatagenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frag_cari"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="#dadada"
+        />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/edJudul"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="5dp"
+            android:hint="Judul Movie"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/shape_putih"
+            android:inputType="text" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/btCari"
+        android:layout_width="match_parent"
+        android:layout_marginRight="3dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_search_black_24dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="#dadada"
+        android:layout_marginBottom="5dp"
+        />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvdatacari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
