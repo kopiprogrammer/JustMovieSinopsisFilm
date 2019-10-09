@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Tambah Film Baru</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <div id="form-main">
+  <div id="form-div">
+    <form class="form" id="form1" method="POST" action="input_data.php">
+
+      <p class="name">
+        <input name="judul" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Judul" id="name" required/>
+      </p>
+	   <p class="text">
+        <textarea name="sinopsis" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Sinopsis"></textarea>
+      </p>
+	  <p class="name">
+        <input name="genre" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Genre (Contoh : Drama)" id="name" />
+      </p>
+	  <p class="name">
+        <input name="sutradara" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Sutradara (Contoh : Taufik, Hidayat, Asmarinda)" id="name" />
+      </p>
+	  <p class="name">
+        <input name="bintang_film" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Bintang Film (Contoh : Taufik, Hidayat, Asmarinda)" id="name" />
+      </p>
+	  <p class="name">
+        <input name="produksi" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Produksi (Contoh : 20th Fox Century)" id="name" />
+      </p>
+	  <p class="name">
+        <input name="tgl_rilis" type="date" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="tgl_rilis" id="name" />
+      </p>
+      <p class="name">
+        <input name="negara" type="text" class="validate[required,custom[email]] feedback-input" id="name" placeholder="Negara (Contoh : Indonesia)" />
+      </p>
+	  <p class="name">
+        <input name="durasi" type="text" class="validate[required,custom[email]] feedback-input" id="name" placeholder="Durasi (Contoh : 120 Menit)" />
+      </p>
+	  <p class="name">
+        <input name="tahun" type="text" class="validate[required,custom[email]] feedback-input" id="name" placeholder="Tahun (Contoh : 2018)" />
+      </p>
+	  <p class="name">
+        <input name="foto" type="text" class="validate[required,custom[email]] feedback-input" id="name" placeholder="Foto (Masukkan Link Foto)" />
+      </p>
+	   <p class="name">
+        <input name="trailer" type="text" class="validate[required,custom[email]] feedback-input" id="name" placeholder="Trailer (Masukkan Link Trailer Dari Youtube)" />
+      </p>
+      <div class="submit">
+        <input type="submit" value="MASUKKAN" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+    </form>
+  </div>
+  </div>
+
+</body>
+
+</html>
